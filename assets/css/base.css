@@ -1,4 +1,8 @@
 :root {
+    --primary-color: #005BAA;
+    --primary-rgb: 0, 91, 170;
+    --primary-hover: #036ecb;
+
     --gray-900: #111827;
     --gray-800: #1f2937;
     --gray-700: #374151;
@@ -21,7 +25,23 @@
     --shadow-hover: 0 2px 8px 0 rgb(0 0 0 / 20%);
 
     --transition: .3s all ease-in-out;
-    --font-theme: 'Nunito Sans', sans-serif;
+    --font-theme: 'Roboto', sans-serif;
+}
+
+.bgc-primary {
+    background-color: var(--primary-color);
+}
+
+.bgc-primary_effect:hover {
+    background-color: var(--primary-hover);
+}
+
+.bgc-hover {
+    background-color: var(--primary-hover);
+}
+
+.bgc-hover_effect:hover {
+    background-color: var(--primary-color);
 }
 
 html {
@@ -30,7 +50,6 @@ html {
 
 body {
     position: relative;
-    overflow-x: hidden;
     width: 100%;
     background-color: var(--bs-white);
     color: var(--gray-700);
@@ -104,6 +123,16 @@ textarea:focus {
     left: 0;
     width: 100%;
     height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.object-fit-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.object-fit-contain {
     -o-object-fit: contain;
     object-fit: contain;
 }
