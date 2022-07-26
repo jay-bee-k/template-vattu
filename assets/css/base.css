@@ -221,3 +221,33 @@ img[src=""],
 img:not([src]) {
     opacity: 0;
 }
+
+.g-10px {
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 10px;
+}
+
+.py-10px {
+    padding: 10px 0;
+}
+
+
+.px-10px {
+    padding: 0 10px;
+}
+
+.p-10px {
+    padding: 10px;
+}
+
+.py-5px {
+    padding: 5px 0;
+}
+
+.px-5px {
+    padding: 0 5px;
+}
+
+.p-5px {
+    padding: 5px;
+}

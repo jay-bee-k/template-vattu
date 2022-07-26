@@ -16,10 +16,39 @@
     }
 }
 
+.section-heading {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.section-heading .title {
+    font-weight: 700;
+    color: var(--gray-900);
+    font-size: calc(1.4 * var(--size-md));
+    text-transform: uppercase;
+    display: flex;
+}
+
+.section-heading .title .link {
+    margin-left: 15px;
+    font-size: var(--size-md);
+    font-weight: 400;
+    text-transform: initial;
+    align-self: flex-end;
+    padding-bottom: 1px;
+    color: var(--gray-200);
+}
+
+.section-heading .title .link:hover {
+    text-decoration: underline;
+    color: var(--bs-white);
+}
+
 .button-white {
     background: #fff;
     border-radius: 4px;
-    padding: 13px 20px;
+    padding: 13px 20px 11px;
     color: #333;
     text-align: center;
     display: inline-flex;
@@ -28,7 +57,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: var(--transition);
-    font-size: var(--size-md);
+    font-size: var(--size-lg);
 }
 
 .button-white:hover {
@@ -84,7 +113,7 @@
     right: 0;
 }
 
-.slider-theme .banner-slider_item {
+.banner-slider_item {
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -377,4 +406,126 @@
 
 .slider-theme_product .button-slider:hover {
     background: var(--bs-white);
+}
+
+.section-brand .banner-slider_item {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.slider-theme_media #sliderMediaThumb {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.slider-theme_media .button-slider {
+    background: rgba(255, 255, 255, .9);
+    height: 44.64px;
+    width: 20px;
+    font-size: calc(1.6 * var(--size-xxxl));
+    color: var(--gray-500);
+    line-height: 1;
+    opacity: .5;
+    transition: var(--transition);
+    bottom: 0;
+}
+
+.slider-theme_media .button-prev {
+    left: 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 6px 0 4px rgb(0 0 0 / 5%), 4px 0 4px rgb(0 0 0 / 9%);
+}
+
+.slider-theme_media .button-next {
+    right: 0;
+    box-shadow: -6px 0 4px rgb(0 0 0 / 5%), -4px 0 4px rgb(0 0 0 / 9%);
+    border-radius: 4px 0 0 4px;
+}
+
+.slider-theme_media:hover .button-slider {
+    opacity: 1;
+}
+
+.section-media {
+    background-color: var(--primary-color);
+}
+
+.media-video {
+    background-color: rgba(var(--bs-white-rgb), .2);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.section-media img {
+    border-radius: 4px;
+}
+
+.media-video .media-video_list {
+    max-height: 248px;
+    overflow-y: auto;
+    margin-right: -10px;
+}
+
+.media-video .media-video_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.media-video .media-video_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.media-video .media-video_list::-webkit-scrollbar-thumb {
+    background: #ccc8c8;
+}
+
+.media-video .media-video_list::-webkit-scrollbar-thumb:hover {
+    background: #b7b6b6;
+}
+
+.media-video .media-video_avatar .media-video_avatar--icon {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(13, 13, 13, .5);
+    font-size: calc(2 * var(--size-md));
+}
+
+.media-video .media-video_avatar .media-video_avatar--icon:hover {
+    background-color: rgba(13, 13, 13, .8);
+}
+
+.media-video .media-video_avatar .media-video_avatar--title {
+    font-size: var(--size-lg);
+    font-weight: 700;
+    color: var(--bs-white);
+    padding-top: 10px;
+}
+
+.media-video .media-video_list .media-video_list--item {
+    padding: 10px 0;
+    transition: var(--transition);
+}
+
+.media-video .media-video_list .media-video_list--item:first-child {
+    padding-top: 0;
+}
+
+.media-video .media-video_list .media-video_list--item:last-child {
+    padding-bottom: 0;
+}
+
+.media-video .media-video_list .media-video_list--item .ratio {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.media-video .media-video_list .media-video_list--item .title {
+    padding: 0 0 0 10px;
+    color: var(--bs-white);
+}
+
+.media-video .media-video_list .media-video_list--item:hover {
+    opacity: .6;
+}
+
+.media-video .media-video_list .media-video_list--item + .media-video_list--item {
+    border-top: 1px solid rgba(var(--bs-white-rgb), .2);
 }
