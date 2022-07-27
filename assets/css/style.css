@@ -25,7 +25,7 @@
 .section-heading .title {
     font-weight: 700;
     color: var(--gray-900);
-    font-size: calc(1.4 * var(--size-md));
+    font-size: calc(1.7 * var(--size-md));
     text-transform: uppercase;
     display: flex;
 }
@@ -43,6 +43,29 @@
 .section-heading .title .link:hover {
     text-decoration: underline;
     color: var(--bs-white);
+}
+
+.heading-sub {
+    display: block;
+    padding-left: 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: var(--size-xxl);
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.heading-sub:before {
+    display: block;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    height: 70%;
+    transform: translateY(-50%);
+    width: 3px;
+    background-color: var(--primary-color);
+    content: "";
 }
 
 .button-white {
@@ -237,6 +260,39 @@
     font-size: calc(2.25 * var(--size-md));
 }
 
+.section-countdown .promotion-inner {
+    background: linear-gradient(rgb(241, 50, 55), rgb(248, 207, 214));
+}
+
+.section-countdown .promotion-inner .heading {
+    color: #ffe818 !important;
+    position: relative;
+}
+
+.section-countdown .promotion-inner .heading .box-countdown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: var(--size-md);
+    color: var(--bs-white);
+    text-transform: initial;
+    display: flex !important;
+    align-items: center;
+}
+
+.section-countdown .promotion-inner .heading .box-countdown span {
+    border-radius: 4px;
+    background-color: var(--bs-white);
+    color: var(--gray-900);
+    padding: 4px 4px 2px;
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product-card {
     border-radius: 5px;
     padding: 10px 10px 20px;
@@ -259,6 +315,32 @@
     margin-right: 4px;
     padding: 3px;
     margin-bottom: 8px;
+}
+
+.product-card .card-header .card-sale {
+    width: 80px;
+    position: absolute;
+    height: 31px;
+    top: -1px;
+    right: -15px;
+    background: url(../images/flashsale.png) center/contain no-repeat;
+    margin: 0 0 10px 10px;
+    border-radius: 3px;
+    z-index: 2;
+    transform: rotateY(180deg);
+}
+
+.product-card .card-header .card-sale span {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -50%;
+    transform: rotateY(-180deg) translate(-50%, -50%);
+    perspective: 100px;
 }
 
 .product-card .card-header .card-image {
@@ -341,6 +423,13 @@
     padding: 1px 2px 2px 2px;
     margin-left: 7px;
     font-size: 14px;
+}
+
+.product-card .card-body .card-price del {
+    color: var(--gray-400);
+    font-size: var(--size-md);
+    margin-left: 4px;
+    font-weight: 400;
 }
 
 .product-card .card-body .card-price.card-price_small {
@@ -528,4 +617,68 @@
 
 .media-video .media-video_list .media-video_list--item + .media-video_list--item {
     border-top: 1px solid rgba(var(--bs-white-rgb), .2);
+}
+
+.articles-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.articles-column .articles-title {
+    padding: .75rem 0 0;
+    font-weight: 700;
+    font-size: var(--size-lg);
+    color: var(--gray-900);
+    min-height: 54px;
+    transition: var(--transition);
+}
+
+.articles-column:hover .articles-thumb {
+    opacity: .9;
+}
+
+.articles-column:hover .articles-title {
+    color: var(--primary-color);
+}
+
+.articles-list {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--gray-100);
+}
+
+.articles-list .articles-row + .articles-row {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px dashed var(--gray-100);
+}
+
+.articles-row {
+    display: flex;
+    position: relative;
+}
+
+.articles-row .articles-thumb {
+    width: 33.3333%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.articles-row .articles-title {
+    padding: 0 .75rem;
+    font-size: var(--size-md);
+    font-weight: 500;
+    color: var(--gray-900);
+    transition: var(--transition);
+}
+
+.articles-row:hover .articles-thumb {
+    opacity: .9;
+}
+
+.articles-row:hover .articles-title {
+    color: var(--primary-color);
 }
