@@ -28,6 +28,7 @@
     font-size: calc(1.7 * var(--size-md));
     text-transform: uppercase;
     display: flex;
+    white-space: nowrap;
 }
 
 .section-heading .title .link {
@@ -43,6 +44,37 @@
 .section-heading .title .link:hover {
     text-decoration: underline;
     color: var(--bs-white);
+}
+
+.section-heading .links {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding-bottom: 4px;
+}
+
+.section-heading .links::-webkit-scrollbar {
+    height: 5px;
+    background-color: #e9e9e9;
+}
+
+.section-heading .links::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+}
+
+.section-heading .links > a {
+    border-radius: 6px;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    color: var(--gray-700);
+    padding: 6px 10px 5px;
+    font-size: var(--size-sm);
+    white-space: nowrap;
+}
+
+.section-heading .links > a + a {
+    margin-left: .5rem;
 }
 
 .heading-sub {
@@ -140,6 +172,10 @@
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+}
+
+.banner-slider_item img {
+    width: 100%;
 }
 
 .slider-theme .button-slider {
@@ -462,6 +498,10 @@
     color: var(--primary-color);
 }
 
+.section-category__product .product-card {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
 .slider-theme_product {
     position: relative;
 }
@@ -681,4 +721,130 @@
 
 .articles-row:hover .articles-title {
     color: var(--primary-color);
+}
+
+.footer .footer-top {
+    padding: 2rem 0;
+    background-color: #f3f3f3;
+    border-top: 1px solid var(--gray-200);
+}
+
+.footer .footer-top .footer-list ul li.is-hidden {
+    display: none;
+}
+
+.footer .footer-top .footer-list ul li a {
+    display: flex;
+    color: var(--gray-800);
+    font-size: var(--size-md);
+}
+
+.footer .footer-top .footer-list ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer .footer-top .footer-list ul li a i {
+    transition: var(--transition);
+    margin-left: 5px;
+}
+
+.footer .footer-top .footer-list ul li + li {
+    margin-top: 10px;
+}
+
+.footer .footer-top .footer-contact .footer-contact_title {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-contact .footer-contact_title b {
+    color: var(--gray-900);
+}
+
+.footer .footer-top .footer-contact .footer-contact_item {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-contact .footer-contact_item span {
+    flex-shrink: 0;
+    display: block;
+    width: 80px;
+}
+
+.footer .footer-top .footer-contact .footer-contact_item a {
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.footer .footer-top .footer-contact .footer-contact_item + .footer-contact_item {
+    margin-top: 10px;
+}
+
+.footer .footer-top .footer-meta .footer-social {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer .footer-top .footer-meta .footer-social .footer-social_item + .footer-social_item {
+    margin-left: 30px;
+}
+
+.footer .footer-top .footer-meta .footer-social .footer-social_item > a {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-meta .footer-social .footer-social_item > a i {
+    font-size: var(--size-xxxl);
+    margin-right: 5px;
+}
+
+.footer .footer-top .footer-meta .footer-social .footer-social_item > a .fa-facebook {
+    color: #4267B2;
+}
+
+.footer .footer-top .footer-meta .footer-social .footer-social_item > a .fa-youtube {
+    color: #FF0000;
+}
+
+.footer .footer-top .footer-meta .footer-images {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-top .footer-meta .footer-images a + a {
+    margin-left: 8px;
+}
+
+.footer .footer-top .footer-meta .footer-images a img {
+    width: auto;
+    max-width: 100%;
+}
+
+.footer .footer-top .footer-meta .footer-payments {
+    margin-top: 20px;
+}
+
+.footer .footer-top .footer-meta .footer-payments .footer-payments_title {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-meta .footer-payments a {
+    display: block;
+    background-color: var(--bs-white);
+    padding: 5px;
+    border: 1px solid var(--gray-100);
+}
+
+.footer .footer-top .footer-meta .footer-payments a img {
+    width: auto;
+    max-width: 100%;
+}
+
+.footer .footer-bottom {
+    background-color: var(--bs-white);
+    border-top: 1px solid var(--gray-200);
+    padding: 15px 0;
+    font-size: var(--size-sm);
+    line-height: 1.5;
 }

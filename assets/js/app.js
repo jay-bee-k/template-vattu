@@ -285,6 +285,76 @@
         });
     }
 
+    let handleLoadProduct = function () {
+        $('.load-product').click(function () {
+            let id = $(this).attr('data-id');
+            let renderHTML = '';
+            for (let i = 0; i <= 9; i++) {
+                renderHTML += `<div class="col">
+                            <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                <div class="card-header border-0 p-0 bg-white">
+                                    <div class="card-label">
+                                        Trả góp 0%
+                                    </div>
+                                    <div class="card-sale">
+                                        <span>
+                                            Giảm 13%
+                                        </span>
+                                    </div>
+                                    <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                        <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                             class="lazy img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-label card-label_giamgia">
+                                        <img src="./assets/images/icon1-50x50.png" alt="">
+                                        <span>Giảm sốc</span>
+                                    </div>
+                                    <div class="card-title">
+                                        Aqua 8.8 Kg AQW-FR88GT.BK
+                                    </div>
+                                    <div class="card-text">
+                                        Online giá rẻ
+                                    </div>
+                                    <div class="card-price">
+                                        5.990.000₫
+                                        <del>
+                                            7.990.000₫
+                                        </del>
+                                    </div>
+                                    <div class="card-desc">
+                                        Giảm thêm 200.000₫ và Quà 1.300.000₫
+                                    </div>
+                                    <div class="card-rate">
+                                        <b>4.4</b>
+                                        <i class="fas fa-star"></i>
+                                        (53)
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>`;
+            }
+
+            $(`#${id}`).append(renderHTML);
+            configLazyLoad();
+        });
+    }
+
+    let handleLoadFooter = function () {
+        $('.load-footer').click(function () {
+            let listLi = $(this).closest('ul').find('li.is-hidden');
+            if (listLi.hasClass('d-block')) {
+                listLi.removeClass('d-block');
+                $(this).html('Xem thêm&nbsp;<i class="fas fa-caret-down"></i>');
+            } else {
+                listLi.addClass('d-block');
+                $(this).html('Thu gọn&nbsp;<i class="fas fa-caret-up"></i>');
+            }
+        });
+    }
+
     $(document).ready(function () {
         configLazyLoad();
 
@@ -295,7 +365,10 @@
         initSliderBrand();
         initSliderArticles();
         initSliderMedia();
+
         handleLimitCategories();
+        handleLoadProduct();
+        handleLoadFooter();
     });
 
 })(jQuery);
