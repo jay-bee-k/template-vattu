@@ -151,6 +151,11 @@
     right: -1%;
 }
 
+.header-slider .header-slider_item img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .section-hero {
     padding-bottom: 8rem;
     position: relative;
