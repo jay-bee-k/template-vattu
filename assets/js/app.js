@@ -19,7 +19,7 @@
             new Swiper('#sliderHeader .swiper', {
                 speed: 500,
                 autoplay: {
-                    delay: 8000,
+                    delay: 10000,
                     disableOnInteraction: false,
                 },
                 effect: "fade",
@@ -38,7 +38,7 @@
                 speed: 1500,
                 spaceBetween: 10,
                 autoplay: {
-                    delay: 8000,
+                    delay: 10000,
                     disableOnInteraction: false,
                 },
                 lazy: {
@@ -73,7 +73,7 @@
                     speed: 1500,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 8000,
+                        delay: 10000,
                         disableOnInteraction: false,
                     },
                     lazy: {
@@ -112,7 +112,7 @@
                     speed: 1500,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 800000,
+                        delay: 10000,
                         disableOnInteraction: false,
                     },
                     lazy: {
@@ -149,7 +149,7 @@
                 speed: 1500,
                 spaceBetween: 10,
                 autoplay: {
-                    delay: 8000,
+                    delay: 10000,
                     disableOnInteraction: false,
                 },
                 lazy: {
@@ -185,7 +185,7 @@
                 speed: 1500,
                 spaceBetween: 10,
                 autoplay: {
-                    delay: 8000,
+                    delay: 10000,
                     disableOnInteraction: false,
                 },
                 lazy: {
