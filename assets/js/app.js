@@ -216,6 +216,7 @@
     }
 
     let [mediaThumb, mediaAvatar] = [];
+    let i = 0, j = 0;
     let initSliderMedia = function () {
         mediaThumb = new Swiper('#sliderMediaThumb .swiper', {
             spaceBetween: 4,
@@ -223,6 +224,8 @@
             lazy: {
                 loadOnTransitionStart: true
             },
+            observer: true,
+            observeParents: true,
             preloadImages: true,
             breakpoints: {
                 320: {
@@ -235,6 +238,12 @@
                     slidesPerView: 4,
                 },
             },
+            on: {
+                observerUpdate: function (swiper) {
+                    j = $('div#sliderMediaThumb').height();
+                    $('#mediaVideo .media-video_list').css('maxHeight', j + 'px');
+                },
+            }
         });
 
         mediaAvatar = new Swiper('#sliderMediaAvatar .swiper', {
@@ -245,11 +254,19 @@
             lazy: {
                 loadOnTransitionStart: true
             },
+            observer: true,
+            observeParents: true,
             preloadImages: true,
             navigation: {
                 nextEl: '#sliderMedia .button-next',
                 prevEl: '#sliderMedia .button-prev',
             },
+            on: {
+                observerUpdate: function (swiper) {
+                    i = $('div#sliderMediaAvatar').height();
+                    $('#mediaVideo .media-video_list').css('maxHeight', $('#mediaVideo .media-video_list').innerHeight() + i - 15 + 'px');
+                },
+            }
         });
 
         handleZoomSliderMedia($('#sliderMedia [data-fancybox=slider-avaThumb]'), mediaAvatar, mediaThumb);
