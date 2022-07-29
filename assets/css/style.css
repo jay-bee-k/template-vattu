@@ -1153,7 +1153,7 @@
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
-    z-index: 2;
+    z-index: 20;
     transform: rotateY(180deg);
 }
 
@@ -1281,16 +1281,18 @@
     font-weight: 700;
 }
 
-.product-card:hover .card-header .card-image img {
-    transform: translateY(-8px);
-}
+@media screen and (min-width: 992px) {
+    .product-card:hover .card-header .card-image img {
+        transform: translateY(-8px);
+    }
 
-.product-card:hover .card-body .card-title {
-    color: var(--primary-color);
-}
+    .product-card:hover .card-body .card-title {
+        color: var(--primary-color);
+    }
 
-.section-category__product .product-card {
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    .section-category__product .product-card {
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+    }
 }
 
 @media screen and (max-width: 991px) {
