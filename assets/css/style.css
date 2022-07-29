@@ -578,18 +578,8 @@
 }
 
 .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub {
-    position: absolute;
-    top: 0;
-    left: 240px;
-    z-index: 2;
     flex-wrap: wrap;
-    height: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    border-left: 1px solid var(--gray-200);
     background-color: var(--bs-white);
-    width: max-content;
-    display: none;
 }
 
 .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub::-webkit-scrollbar {
@@ -659,13 +649,29 @@
     color: var(--primary-color);
 }
 
-.header-navigation .navigation-list .navigation-list_item.navigation-list_category:hover .navigation-mega {
-    display: block;
+@media screen and (min-width: 992px) {
+    .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub {
+        position: absolute;
+        top: 0;
+        left: 240px;
+        z-index: 2;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        border-left: 1px solid var(--gray-200);
+        width: max-content;
+        display: none;
+    }
+
+    .header-navigation .navigation-list .navigation-list_item.navigation-list_category:hover .navigation-mega {
+        display: block;
+    }
+
+    .header-navigation .navigation-mega .navigation-mega_item:hover .navigation-mega_sub {
+        display: flex;
+    }
 }
 
-.header-navigation .navigation-mega .navigation-mega_item:hover .navigation-mega_sub {
-    display: flex;
-}
 
 @media screen and (min-width: 1200px) {
     .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub {
@@ -755,6 +761,7 @@
 
     .header-navigation .navigation-mega {
         position: fixed;
+        z-index: 10;
         top: 0;
         right: 0;
         left: unset;
@@ -764,6 +771,18 @@
         overflow-y: auto;
         width: 80%;
         max-width: 375px;
+        -webkit-transition: visibility .5s cubic-bezier(.645, .045, .355, 1), opacity .5s cubic-bezier(.645, .045, .355, 1), -webkit-transform .5s cubic-bezier(.645, .045, .355, 1);
+        transition: visibility .5s cubic-bezier(.645, .045, .355, 1), opacity .5s cubic-bezier(.645, .045, .355, 1), -webkit-transform .5s cubic-bezier(.645, .045, .355, 1);
+        -o-transition: transform .5s cubic-bezier(.645, .045, .355, 1), visibility .5s cubic-bezier(.645, .045, .355, 1), opacity .5s cubic-bezier(.645, .045, .355, 1);
+        transition: transform .5s cubic-bezier(.645, .045, .355, 1), visibility .5s cubic-bezier(.645, .045, .355, 1), opacity .5s cubic-bezier(.645, .045, .355, 1);
+        transition: transform .5s cubic-bezier(.645, .045, .355, 1), visibility .5s cubic-bezier(.645, .045, .355, 1), opacity .5s cubic-bezier(.645, .045, .355, 1), -webkit-transform .5s cubic-bezier(.645, .045, .355, 1);
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transform: translate3d(104%, 0, 0);
+        transform: translate3d(104%, 0, 0);
     }
 
     .header-navigation .navigation-mega .navigation-mega_item > a {
@@ -773,6 +792,55 @@
 
     .header-navigation .navigation-mega .navigation-mega_item > a .navigation-mega_item__arrow > i:before {
         content: "\f107";
+    }
+
+    .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub {
+        width: 100%;
+        background-color: #f9f9f9;
+        border-top: 1px solid var(--gray-200);
+    }
+
+    .header-navigation .navigation-mega .navigation-mega_item .navigation-mega_sub .navigation-mega_sub__item {
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .header-navigation .navigation-mega .navigation-mega_item > a > .navigation-mega_item__arrow > i {
+        transition: var(--transition);
+    }
+
+    .header-navigation .navigation-mega .navigation-mega_item > a[aria-expanded=true] > .navigation-mega_item__arrow > i {
+        transform: rotate(180deg);
+    }
+
+    .header-overlay {
+        position: fixed;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        -webkit-transition: var(--transition);
+        -o-transition: var(--transition);
+        transition: var(--transition);
+    }
+
+    .is-show_navigation .header .header-overlay {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .is-show_navigation .header-navigation .navigation-mega {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 

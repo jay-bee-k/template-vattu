@@ -14,14 +14,14 @@
                 elmNavigation = $('#header-navigation'),
                 elmOverlay = $('#header-overlay');
 
-            elmNavigation.find('ul > li > ul > li').map(function (index) {
+            elmNavigation.find('li > .navigation-mega_sub > .navigation-mega_sub__item').map(function (index) {
                 $(this).parent().prev('a').attr({
                     'data-bs-toggle': 'collapse',
                     'data-bs-target': "#header-sub_" + index,
                 });
                 $(this).parent().attr({
                     "id": "header-sub_" + index,
-                    "class": "navigation-sub collapse",
+                    "class": "navigation-mega_sub collapse",
                     "data-bs-parent": "#header-navigation"
                 });
             });
@@ -41,6 +41,10 @@
                         'style': 'overflow-y: hidden'
                     });
                 }
+            });
+
+            elmOverlay.click(() => {
+                elmHamburger.trigger('click')
             });
         }
     }
