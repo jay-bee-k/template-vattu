@@ -140,15 +140,14 @@
     }
 
     let initMultiSliderProduct = function () {
-        if ($('.slider-theme_product').length) {
-            $('.slider-theme_product').each(function () {
+        if ($('.slider-theme_product:not(.init-single)').length) {
+            $('.slider-theme_product:not(.init-single)').each(function () {
                 let sliderProductID = $(this).attr('id');
                 new Swiper(`#${sliderProductID} .swiper`, {
                     speed: 1500,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 1000000000,
-                        disableOnInteraction: false,
+                        delay: 10000,
                     },
                     lazy: {
                         loadOnTransitionStart: true
@@ -321,6 +320,40 @@
         });
     }
 
+    let [imagesThumb, imagesAvatar] = [];
+    let initSliderImages = function () {
+        imagesThumb = new Swiper('#sliderImagesThumb .swiper', {
+            spaceBetween: 10,
+            slidesPerView: 6,
+            lazy: {
+                loadOnTransitionStart: true
+            },
+            preloadImages: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 3.25,
+                },
+                1199: {
+                    slidesPerView: 6,
+                },
+            },
+        });
+
+        imagesAvatar = new Swiper('#sliderImagesAvatar .swiper', {
+            thumbs: {
+                swiper: imagesThumb,
+            },
+            slidesPerView: 1,
+            lazy: {
+                loadOnTransitionStart: true
+            },
+            preloadImages: true,
+            navigation: {
+                nextEl: '#sliderImagesAvatar .button-next',
+                prevEl: '#sliderImagesAvatar .button-prev',
+            },
+        });
+    }
 
     let handleLimitCategories = function () {
         $('#more-categories').click(function () {
@@ -423,6 +456,99 @@
         });
     }
 
+    let handlePaymentRadio = function () {
+        $('.payment-ratio').click(function () {
+            if ($(this).hasClass('is-checked')) {
+                $(this).removeClass('is-checked');
+            } else {
+                $('.payment-ratio').removeClass('is-checked');
+                $(this).addClass('is-checked');
+            }
+        })
+    }
+    let handlePaymentTooltip = function () {
+        $('.payment-tooltip').mouseover(function (e) {
+            let renderHTML = `<div style="color: #000000">
+                                <span>
+                                    <strong>- Thanh toán qua 3 kỳ</strong>
+                                    ( thanh toán trước chỉ với ~33% )
+                                    <br>
+                                    <strong>- Miễn lãi, miễn phí, không chênh lệch giá trả thẳng.</strong>
+                                    <br>
+                                    <strong>- Duyệt nhanh trong 5s</strong>
+                                    chỉ với 1 ảnh mặt trước CMND/CCCD, không cần tải App.
+                                    <br>
+                                    <strong>- Thanh toán các kỳ tiện lợi:&nbsp;</strong>
+                                </span>
+                                <span>Chuyển khoản, ATM, Visa, Mastercard.</span>
+                                <br>
+                                <span>
+                                    -<strong>&nbsp;Áp dụng cho các sản phẩm từ 300.000đ - 10.000.000đ.</strong>
+                                    <br>
+                                    <br>
+                                    <strong>ĐIỀU KIỆN </strong>
+                                    <br>- Sim chính chủ ( Viettel, Mobifone, Vinaphone )
+                                    <br>- CMND/CCCD gốc ( xác thực online )
+                                    <br>- Công dân Việt Nam trên 18 tuổi
+                                    <br>
+                                    <br>
+                                    <strong>KHUYẾN MÃI</strong>
+                                </span>
+                                <br>- Nhập mã <span style="color:#FF0000;"><strong>FUNDIIN50 </strong></span>giảm ngay
+                                <span style="color:#FF0000;"><strong>50.000đ </strong></span>cho đơn hàng từ 300.000đ<br>- Mã giảm giá chỉ được sử
+                                dụng 1 lần tại Điện Máy Xanh hoặc Thế Giới Di Động trong thời gian: <strong>20.05.2022 - 20.08.2022</strong>
+                            </div>`;
+
+            const tooltipElement = document.querySelector('#' + $(this).attr('id'));
+
+            let tooltip = new bootstrap.Tooltip(tooltipElement, {
+                html: true,
+                placement: 'bottom',
+                container: '.product-payments',
+                sanitize: false,
+            });
+
+            $(this).attr('data-bs-original-title', renderHTML);
+            bootstrap.Tooltip.getInstance('#' + $(this).attr('id'));
+            tooltip.show();
+        });
+    }
+
+    let handleLoadPromoProduct = function () {
+        $('.product-promo_load').click(function () {
+            $(this).parent().prev('.product-promo_body').children('ul').children('li.d-none').removeClass('d-none');
+            $(this).parent().remove();
+        });
+    }
+
+    let initSliderRelated = function () {
+        if ($('#sliderProductRelated').length) {
+            new Swiper(`#sliderProductRelated .swiper`, {
+                speed: 1500,
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: true,
+                },
+                lazy: {
+                    loadOnTransitionStart: true
+                },
+                preloadImages: true,
+                loop: false,
+                direction: 'horizontal',
+                navigation: {
+                    nextEl: `#sliderProductRelated .button-next`,
+                    prevEl: `#sliderProductRelated .button-prev`,
+                },
+                breakpoints: {
+                    1199: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        }
+    }
+
     $(document).ready(function () {
         configLazyLoad();
         handleHeaderMobile();
@@ -439,6 +565,13 @@
         handleLoadProduct();
         handleLoadFooter();
         handleDropdownSearch();
+
+        // chi tiết sản phẩm
+        initSliderImages();
+        initSliderRelated();
+        handlePaymentRadio();
+        handlePaymentTooltip();
+        handleLoadPromoProduct();
     });
 
 })(jQuery);
