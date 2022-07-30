@@ -1291,7 +1291,7 @@
     position: absolute;
     height: 31px;
     top: -1px;
-    left: -15px;
+    right: -15px;
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
@@ -1315,6 +1315,7 @@
 
 .product-card .card-header .card-image {
     padding-top: 35px;
+    z-index: 1;
 }
 
 .product-card .card-header .card-image img {
