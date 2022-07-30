@@ -147,7 +147,7 @@
                     speed: 1500,
                     spaceBetween: 10,
                     autoplay: {
-                        delay: 10000,
+                        delay: 1000000000,
                         disableOnInteraction: false,
                     },
                     lazy: {
