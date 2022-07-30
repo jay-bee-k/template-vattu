@@ -1274,14 +1274,15 @@
 .product-card .card-sale {
     width: 80px;
     position: absolute;
+    z-index: 2;
     height: 31px;
     top: 10px;
-    right: -5px;
+    left: -15px;
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    /*-webkit-transform: rotateY(180deg);*/
+    /*transform: rotateY(180deg);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1295,14 +1296,14 @@
     width: 100%;
     display: block;
     padding-bottom: 4px;
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    /*-webkit-transform: rotateY(-180deg);*/
+    /*transform: rotateY(-180deg);*/
 }
 
 .product-card .card-header .card-label {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #f1f1f1;
     color: #333;
     border-radius: 2px;
@@ -1499,6 +1500,11 @@
 
 .slider-theme_product {
     position: relative;
+    margin: 0 -9px;
+}
+
+.slider-theme_product > .swiper {
+    padding: 0 9px;
 }
 
 .slider-theme_product .button-slider {
@@ -1515,17 +1521,19 @@
 }
 
 .slider-theme_product .button-prev {
-    left: -15px;
+    left: -6px;
     border-radius: 0 4px 4px 0;
     -webkit-box-shadow: 6px 0 4px rgb(0 0 0 / 5%), 4px 0 4px rgb(0 0 0 / 9%);
     box-shadow: 6px 0 4px rgb(0 0 0 / 5%), 4px 0 4px rgb(0 0 0 / 9%);
+    padding-right: 3px;
 }
 
 .slider-theme_product .button-next {
-    right: -15px;
+    right: -6px;
     -webkit-box-shadow: -6px 0 4px rgb(0 0 0 / 5%), -4px 0 4px rgb(0 0 0 / 9%);
     box-shadow: -6px 0 4px rgb(0 0 0 / 5%), -4px 0 4px rgb(0 0 0 / 9%);
     border-radius: 4px 0 0 4px;
+    padding-left: 3px;
 }
 
 .slider-theme_product:hover .button-slider {
