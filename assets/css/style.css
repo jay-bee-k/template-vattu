@@ -1280,7 +1280,6 @@
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
-    z-index: 1;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     display: flex;
