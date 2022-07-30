@@ -1910,3 +1910,17 @@
     font-size: var(--size-sm);
     line-height: 1.5;
 }
+
+.section-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item {
+    padding-left: .75rem;
+}
+
+.section-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f105";
+    padding-right: .75rem;
+}
+
+.section-breadcrumb .breadcrumb .breadcrumb-item > a:hover {
+    color: var(--primary-color);
+}
