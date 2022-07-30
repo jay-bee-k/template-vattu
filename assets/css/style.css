@@ -1280,7 +1280,7 @@
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
-    z-index: 1020;
+    z-index: 1;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
     display: flex;
@@ -1314,7 +1314,6 @@
     padding: 3px;
     margin-bottom: 8px;
 }
-
 
 .product-card .card-header .card-image {
     padding-top: 35px;
@@ -1492,6 +1491,11 @@
     .section-category__product .section-heading {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+
+    .product-card .card-sale {
+        top: 5px;
+        z-index: 1;
     }
 }
 
