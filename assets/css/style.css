@@ -1291,11 +1291,11 @@
     position: absolute;
     height: 31px;
     top: -1px;
-    right: -15px;
+    left: -15px;
     background: url(../images/flashsale.png) center/contain no-repeat;
     margin: 0 0 10px 10px;
     border-radius: 3px;
-    z-index: 20;
+    z-index: 1020;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
