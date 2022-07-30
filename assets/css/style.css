@@ -1296,8 +1296,8 @@
     margin: 0 0 10px 10px;
     border-radius: 3px;
     z-index: 20;
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    /*-webkit-transform: rotateY(180deg);*/
+    /*transform: rotateY(180deg);*/
 }
 
 .product-card .card-header .card-sale span {
@@ -1306,11 +1306,11 @@
     text-align: center;
     color: #fff;
     width: 100%;
-    position: absolute;
-    top: calc(50% - 2px);
-    left: -50%;
-    -webkit-transform: rotateY(-180deg) translate(-50%, -50%);
-    transform: rotateY(-180deg) translate(-50%, -50%);
+    /*position: absolute;*/
+    /*top: calc(50% - 2px);*/
+    /*left: -50%;*/
+    /*-webkit-transform: rotateY(-180deg) translate(-50%, -50%);*/
+    /*transform: rotateY(-180deg) translate(-50%, -50%);*/
 }
 
 .product-card .card-header .card-image {
