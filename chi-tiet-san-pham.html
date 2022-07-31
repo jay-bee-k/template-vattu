@@ -3205,7 +3205,9 @@
                             </a>
                         </div>
                         <div class="product-social">
-                            like share facebook
+                            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                                 data-width="150" data-layout="button" data-action="like" data-size="small"
+                                 data-share="true"></div>
                         </div>
                     </div>
                     <div class="product-body section-gap">
@@ -3334,7 +3336,9 @@
                                     </div>
                                 </div>
                                 <div class="product-actions">
-                                    <a class="product-actions_item is-active" href="javascript:void(0)">
+                                    <a class="product-actions_item product-handleTab is-active"
+                                       data-popup-target="#ddnb"
+                                       href="#popupDetailProduct" data-bs-toggle="modal">
                                         <span class="product-actions_item__icon">
                                             <img src="./assets/images/page-product/icon/icon-noibat.png" alt="">
                                         </span>
@@ -3342,15 +3346,9 @@
                                             Đặc điểm <br> nổi bật
                                         </span>
                                     </a>
-                                    <a class="product-actions_item" href="javascript:void(0)">
-                                        <span class="product-actions_item__icon">
-                                            <img src="./assets/images/page-product/icon/icon-hinhanh.png" alt="">
-                                        </span>
-                                        <span class="product-actions_item__text">
-                                            Hình ảnh <br> sản phẩm
-                                        </span>
-                                    </a>
-                                    <a class="product-actions_item" href="javascript:void(0)">
+                                    <a class="product-actions_item product-handleTab" data-popup-target="#vsp"
+                                       href="#popupDetailProduct"
+                                       data-bs-toggle="modal">
                                         <span class="product-actions_item__icon">
                                             <img src="./assets/images/page-product/icon/icon-video.png" alt="">
                                         </span>
@@ -3358,7 +3356,9 @@
                                             Video <br> sản phẩm
                                         </span>
                                     </a>
-                                    <a class="product-actions_item" href="javascript:void(0)">
+                                    <a class="product-actions_item product-handleTab" data-popup-target="#tskt"
+                                       href="#popupDetailProduct"
+                                       data-bs-toggle="modal">
                                         <span class="product-actions_item__icon">
                                             <img src="./assets/images/page-product/icon/icon-thongsokythuat.png" alt="">
                                         </span>
@@ -3366,7 +3366,9 @@
                                             Thông số <br> kỹ thuật
                                         </span>
                                     </a>
-                                    <a class="product-actions_item" href="javascript:void(0)">
+                                    <a class="product-actions_item product-handleTab" data-popup-target="#ttsp"
+                                       href="#popupDetailProduct"
+                                       data-bs-toggle="modal">
                                         <span class="product-actions_item__icon">
                                             <img src="./assets/images/page-product/icon/icon-thongsosanpham.png" alt="">
                                         </span>
@@ -3479,392 +3481,82 @@
                                              alt="">
                                     </a>
                                 </div>
-                                <div class="product-related">
-                                    <div class="section-heading">
-                                        <div class="title">
-                                            Sản phẩm liên quan
-                                        </div>
+                                <div class="product-description">
+                                    <div class="product-description_title">
+                                        Thông tin sản phẩm
                                     </div>
-                                    <div class="pt-0">
-                                        <div class="slider-theme_product mx-0 init-single" id="sliderProductRelated">
-                                            <div class="swiper px-0">
-                                                <div class="swiper-wrapper h-auto">
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-sale">
-                                                                <span>
-                                                                    Giảm 13%
-                                                                </span>
-                                                            </div>
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_giamgia">
-                                                                    <img src="./assets/images/icon1-50x50.png" alt="">
-                                                                    <span>Giảm sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <del>
-                                                                        7.990.000₫
-                                                                    </del>
-                                                                </div>
-                                                                <div class="card-desc">
-                                                                    Giảm thêm 200.000₫ và Quà 1.300.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-sale">
-                                                                <span>
-                                                                    Giảm 13%
-                                                                </span>
-                                                            </div>
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_xakho">
-                                                                    <img src="./assets/images/icon5-50x50.png" alt="">
-                                                                    <span>Xả kho giá sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Máy lọc nước R.O Hydrogen Kangaroo VTU KG100HA 9 lõi
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <del>
-                                                                        7.990.000₫
-                                                                    </del>
-                                                                </div>
-                                                                <div class="card-desc">
-                                                                    Giảm thêm 200.000₫ và Quà 1.300.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-sale">
-                                                                <span>
-                                                                    Giảm 13%
-                                                                </span>
-                                                            </div>
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_quatang">
-                                                                    <img src="./assets/images/icon4-50x50.png" alt="">
-                                                                    <span>Tặng ngay sản phẩm ABC</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <del>
-                                                                        7.990.000₫
-                                                                    </del>
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-sale">
-                                                                <span>
-                                                                    Giảm 13%
-                                                                </span>
-                                                            </div>
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_sinhnhat">
-                                                                    <img src="./assets/images/icon3-50x50.png" alt="">
-                                                                    <span>Sinh nhật giảm sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <del>
-                                                                        7.990.000₫
-                                                                    </del>
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_giamgia">
-                                                                    <img src="./assets/images/icon1-50x50.png" alt="">
-                                                                    <span>Giảm sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <small>-25%</small>
-                                                                </div>
-                                                                <div class="card-price card-price_small">
-                                                                    <i class="fal fa-usd-circle"></i>
-                                                                    Giá rẻ: 3.042.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_xakho">
-                                                                    <img src="./assets/images/icon5-50x50.png" alt="">
-                                                                    <span>Xả kho giá sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Máy lọc nước R.O Hydrogen Kangaroo VTU KG100HA 9 lõi
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <small>-25%</small>
-                                                                </div>
-                                                                <div class="card-desc">
-                                                                    Giảm thêm 200.000₫ và Quà 1.300.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-label">
-                                                                    Trả góp 0%
-                                                                </div>
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_quatang">
-                                                                    <img src="./assets/images/icon4-50x50.png" alt="">
-                                                                    <span>Tặng ngay sản phẩm ABC</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <small>-25%</small>
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-label card-label_sinhnhat">
-                                                                    <img src="./assets/images/icon3-50x50.png" alt="">
-                                                                    <span>Sinh nhật giảm sốc</span>
-                                                                </div>
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                    <small>-25%</small>
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="swiper-slide h-auto">
-                                                        <div class="product-card card bg-white rounded-3 border-0 h-100">
-                                                            <div class="card-header border-0 p-0 bg-white">
-                                                                <div class="card-image position-relative overflow-hidden d-flex align-items-center">
-                                                                    <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
-                                                                         class="swiper-lazy img-fluid" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="card-body px-0 pb-0">
-                                                                <div class="card-title">
-                                                                    Aqua 8.8 Kg AQW-FR88GT.BK
-                                                                </div>
-                                                                <div class="card-text">
-                                                                    Online giá rẻ
-                                                                </div>
-                                                                <div class="card-price">
-                                                                    5.990.000₫
-                                                                </div>
-                                                                <div class="card-rate">
-                                                                    <b>4.4</b>
-                                                                    <i class="fas fa-star"></i>
-                                                                    (53)
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="stretched-link"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="button-slider button-prev position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 start-0 z-index-2 transition-default">
-                                                <i class="fal fa-angle-left"></i>
-                                            </div>
-                                            <div class="button-slider button-next position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 end-0 z-index-2 transition-default">
-                                                <i class="fal fa-angle-right"></i>
-                                            </div>
-                                        </div>
+                                    <div class="product-description_content">
+                                        <p><em><strong>Smart Tivi QLED 4K 50 inch Samsung QA50Q60B sở hữu sở hữu vẻ
+                                            ngoài cuốn hút với thiết kế AirSlim thanh mảnh. Bên cạnh đó,
+                                            <a href="https://www.dienmayxanh.com/tivi" target="_blank"
+                                               title="Mời bạn xem thêm tivi đang kinh doanh tại Điện máy XANH"
+                                               type="Mời bạn xem thêm tivi đang kinh doanh tại Điện máy XANH">tivi
+                                            </a>
+                                            trang bị các công nghệ hình ảnh, âm thanh hiện đại như&nbsp;Quantum Dot, bộ
+                                            xử lý Quantum 4K Lite,&nbsp;âm thanh chuyển động theo hình ảnh OTS Lite cho
+                                            trải nghiệm nghe nhìn trên tivi Samsung trở nên hoàn hảo.</strong></em></p>
+                                        <h3>Thiết kế</h3>
+                                        <p>-&nbsp;<a
+                                                href="https://www.dienmayxanh.com/tivi/smart-qled-4k-50-inch-samsung-qa50q60b"
+                                                target="_blank"
+                                                title="Mời bạn xem thêm Smart Tivi QLED 4K 50 inch Samsung QA50Q60B đang kinh doanh tại Điện máy XANH"
+                                                type="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B">Smart Tivi QLED 4K 50
+                                            inch Samsung QA50Q60B
+                                        </a>
+                                            <strong>sở hữu thiết AirSlim thanh mảnh</strong>, cạnh viền bằng nhựa mỏng
+                                            tạo cảm giác xem mở rộng, tránh sao nhãng khi xem tivi.
+                                        </p>
+                                        <p>-
+                                            <a href="https://www.dienmayxanh.com/tivi-samsung?g=smart-tivi"
+                                               target="_blank" title="Mời bạn xem thêm Smart tivi Samsung"
+                                               type="Mời bạn xem thêm Smart tivi Samsung">Smart tivi Samsung
+                                            </a>&nbsp;có kích thước <strong>màn hình 50 inch</strong> được nâng đỡ vững
+                                            chắc bởi <strong>chân đế L</strong> ánh đen cuốn hút. Tivi là sự lựa chọn
+                                            phù hợp với các không gian phòng khách, phòng ngủ, phòng họp,...
+                                        </p>
+                                        <p><img
+                                                alt="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B - Thiết kế"
+                                                data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png"
+                                                class=" lazyloaded"
+                                                title="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B - Thiết kế"
+                                                src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png">
+                                        </p>
+                                        <p><em>*Hình ảnh chỉ mang tính minh hoạ sản phẩm</em></p>
+                                        <h3>Công nghệ hình ảnh</h3>
+                                        <p><strong>-&nbsp;<a
+                                                href="https://www.dienmayxanh.com/kinh-nghiem-hay/cac-cong-nghe-noi-bat-cua-tivi-samsung-20-1339340#man-hinh-cham-luong-tu-quantum-dot"
+                                                target="_blank" title="Mời bạn xem thêm công nghệ Quantum Dot"
+                                                type="Mời bạn xem thêm công nghệ Quantum Dot">Công nghệ Quantum Dot hiển
+                                            thị 100% dải màu
+                                        </a>
+                                        </strong>, tivi hiển thị hình ảnh với độ nét cao, mang đến thế giới màu sắc chân
+                                            thực, sống động.
+                                        </p>
+                                        <p><strong>- Công nghệ đèn nền Dual LED </strong>tích hợp <strong>công nghệ
+                                            Quantum HDR </strong>giúp nâng cao độ tương phản, màu sắc chính xác,
+                                            <a href="https://www.dienmayxanh.com/tivi-samsung" target="_blank"
+                                               title="Mời bạn xem thêm tivi Samsung"
+                                               type="Mời bạn xem thêm tivi Samsung">tivi Samsung
+                                            </a>
+                                            cho hình ảnh đẹp mắt với độ sáng cao.
+                                        </p>
+                                        <p><strong>-&nbsp;<a
+                                                href="https://www.dienmayxanh.com/kinh-nghiem-hay/cac-cong-nghe-hinh-anh-noi-bat-tren-tivi-samsung-2-1343084#bo-xu-ly-quantum-lite"
+                                                target="_blank" title="Mời bạn xem thêm Bộ xử lý Quantum 4K Lite"
+                                                type="Mời bạn xem thêm Bộ xử lý Quantum 4K Lite">Bộ xử lý Quantum 4K
+                                            Lite
+                                        </a>
+                                        </strong>nâng cấp chất lượng hình ảnh đầu vào lên gần chuẩn 4K, các cảnh phim,
+                                            chương trình thể thao, ca nhạc,... được trình chiếu với chất lượng hoàn hảo.
+                                        </p>
+                                        <p><strong>- Chuyển động mượt Motion Xcelerator</strong> giúp giảm độ mờ, độ nét
+                                            chuyển động được nâng cao, giờ đây bạn có thể bắt trọn từng khoảnh khắc của
+                                            các nội dung yêu thích.</p>
                                     </div>
-                                    <div class="pt-4 pb-15px text-center">
-                                        <a href="" class="button-orange button-large">
-                                            Xem tất cả sản phẩm
+                                    <div class="product-description_more">
+                                        <a data-popup-target="#ttsp" href="#popupDetailProduct"
+                                           data-bs-toggle="modal" class="product-handleTab">
+                                            Xem thêm <i class="ms-2 fas fa-caret-right"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -4059,6 +3751,112 @@
                                             Xem bảng giá chi tiết
                                         </a>
                                     </div>
+                                    <div class="product-description">
+                                        <div class="product-description_title">
+                                            Thông số kỹ thuật Smart Tivi QLED 4K 50 inch Samsung QA50Q65A
+                                        </div>
+                                        <div class="product-description_list">
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Loại tivi:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Smart Tivi QLED, 50 inch, 4K
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Hệ điều hành:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Tizen OS 6.0
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Ứng dụng phổ biến:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Clip TV, FPT Play, Galaxy Play (Fim+), MP3 Zing, MyTV, Netflix, POPS
+                                                    Kids, Spotify, Trình duyệt web, VieON, YouTube
+                                                    <a href="">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Loại tivi:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Smart Tivi QLED, 50 inch, 4K
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Hệ điều hành:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Tizen OS 6.0
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Ứng dụng phổ biến:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Clip TV, FPT Play, Galaxy Play (Fim+), MP3 Zing, MyTV, Netflix, POPS
+                                                    Kids, Spotify, Trình duyệt web, VieON, YouTube
+                                                    <a href="">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Loại tivi:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Smart Tivi QLED, 50 inch, 4K
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Hệ điều hành:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Tizen OS 6.0
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Ứng dụng phổ biến:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Clip TV, FPT Play, Galaxy Play (Fim+), MP3 Zing, MyTV, Netflix, POPS
+                                                    Kids, Spotify, Trình duyệt web, VieON, YouTube
+                                                    <a href="">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Loại tivi:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Smart Tivi QLED, 50 inch, 4K
+                                                </div>
+                                            </div>
+                                            <div class="product-description_list__item">
+                                                <div class="product-description_list__left">
+                                                    Hệ điều hành:
+                                                </div>
+                                                <div class="product-description_list__right">
+                                                    Tizen OS 6.0
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-description_more position-static h-auto mt-4">
+                                            <a data-popup-target="#tskt" href="#popupDetailProduct"
+                                               data-bs-toggle="modal" class="product-handleTab">Xem chi tiết thông số <i
+                                                    class="ms-2 fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -4066,6 +3864,1525 @@
                 </div>
             </div>
         </div>
+        <div class="product-more">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="title">
+                        Mua kèm giảm thêm
+                    </div>
+                </div>
+                <div class="product-more_inner">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                <div class="card-header border-0 p-0 bg-white">
+                                    <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                        <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                             class="lazy img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-viewing">
+                                        <b>Bạn đang xem: </b>
+                                    </div>
+                                    <div class="card-title">
+                                        Aqua 8.8 Kg AQW-FR88GT.BK
+                                    </div>
+                                    <div class="card-price">
+                                        5.990.000₫
+                                        <del>
+                                            7.990.000₫
+                                        </del>
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <div class="product-more_icon">
+                                <i class="fal fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                <div class="card-sale">
+                                    <span>
+                                        Giảm 13%
+                                    </span>
+                                </div>
+                                <div class="card-header border-0 p-0 bg-white">
+                                    <div class="card-label">
+                                        Trả góp 0%
+                                    </div>
+                                    <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                        <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                             class="lazy img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-radio">
+                                        <input type="checkbox" name="" class="form-check-input">
+                                    </div>
+                                    <div class="card-title">
+                                        Aqua 8.8 Kg AQW-FR88GT.BK
+                                    </div>
+                                    <div class="card-price">
+                                        5.990.000₫
+                                        <del>
+                                            7.990.000₫
+                                        </del>
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                <div class="card-sale">
+                                    <span>
+                                        Giảm 13%
+                                    </span>
+                                </div>
+                                <div class="card-header border-0 p-0 bg-white">
+                                    <div class="card-label">
+                                        Trả góp 0%
+                                    </div>
+                                    <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                        <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                             class="lazy img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-radio">
+                                        <input type="checkbox" checked name="" class="form-check-input">
+                                    </div>
+                                    <div class="card-title">
+                                        Máy lọc nước R.O Hydrogen Kangaroo VTU KG100HA 9 lõi
+                                    </div>
+                                    <div class="card-price">
+                                        5.990.000₫
+                                        <del>
+                                            7.990.000₫
+                                        </del>
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                <div class="card-sale">
+                                    <span>
+                                        Giảm 13%
+                                    </span>
+                                </div>
+                                <div class="card-header border-0 p-0 bg-white">
+                                    <div class="card-label">
+                                        Trả góp 0%
+                                    </div>
+                                    <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                        <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                             class="lazy img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-0">
+                                    <div class="card-radio">
+                                        <input type="checkbox" name="" class="form-check-input">
+                                    </div>
+                                    <div class="card-title">
+                                        Aqua 8.8 Kg AQW-FR88GT.BK
+                                    </div>
+                                    <div class="card-price">
+                                        5.990.000₫
+                                        <del>
+                                            7.990.000₫
+                                        </del>
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 ms-auto">
+                            <div class="product-more_desc">
+                                Tổng cộng: 15.990.000₫
+                                <span>Tiết kiệm: 2.990.000₫</span>
+                                <a href="" class="button-orange">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-policy">
+            <div class="container">
+                <div class="policy-card d-flex align-items-stretch bg-white">
+                    <div class="policy-card_info">
+                        <div class="policy-card_info__title">
+                            Tự tin mua sắm cùng Vattu
+                        </div>
+                        <div class="policy-card_info__row">
+                            <div class="policy-card_info__column">
+                                <div class="policy-card_info__icon">
+                                    <i class="fal fa-shield-check"></i>
+                                </div>
+                                <div class="policy-card_info__subtitle">
+                                    Chế độ bảo hành tận tâm
+                                </div>
+                                <div class="policy-card_info__desc">
+                                    Tất cả các sản phẩm do Vattu bán ra đều được tuân thủ điều kiện bảo hành của nhà
+                                    cung cấp, hãng sản xuất. Nếu có vấn đề về chất lượng sản phẩm, Vattu xin cam kết
+                                    sẽ hỗ trợ Quý khách tới cùng.
+                                </div>
+                                <div class="policy-card_info__link">
+                                    <a href="">
+                                        Chi tiết <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="policy-card_info__column">
+                                <div class="policy-card_info__icon">
+                                    <i class="fal fa-repeat"></i>
+                                </div>
+                                <div class="policy-card_info__subtitle">
+                                    Hỗ trợ đổi trả 1-1 hoặc hoàn tiền 100%
+                                </div>
+                                <div class="policy-card_info__desc">
+                                    Với thời gian dùng thử lên tới 15 ngày, Quý khách sẽ được hỗ trợ đổi trả 1-1 hoặc
+                                    hoàn tiền 100% nếu phát sinh lỗi hoặc cảm thấy sản phẩm chưa đáp ứng được nhu cầu.
+                                </div>
+                                <div class="policy-card_info__link">
+                                    <a href="">
+                                        Chi tiết <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4 border-top"></div>
+                        <div class="policy-card_info__wrap">
+                            <div class="policy-card_info__icon">
+                                <i class="fal fa-info-circle"></i>
+                            </div>
+                            <div class="policy-card_info__subtitle">
+                                Thông tin hữu ích
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fal fa-phone-alt"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Hotline:&nbsp;1900.63.3579
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fal fa-box"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Vận chuyển, thanh toán
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fab fa-facebook"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Group trao đổi và hỗ trợ
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fal fa-box-check"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Tra cứu bảo hành
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fal fa-map"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Hệ thống cửa hàng
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="" class="policy-card_info__box">
+                                        <span class="policy-card_info__box-icon">
+                                            <i class="fal fa-clipboard-list-check"></i>
+                                        </span>
+                                        <span class="policy-card_info__box-text">
+                                            Bảng giá dịch vụ
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4 border-top"></div>
+                        <div class="policy-card_info__wrap">
+                            <div class="policy-card_info__icon">
+                                <i class="fal fa-hand-sparkles fa-rotate-315"></i>
+                            </div>
+                            <div class="policy-card_info__subtitle">
+                                Vattu trên social networks
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-lg-3 col-6">
+                                    <a href="" class="policy-card_info__social">
+                                        <img src="./assets/images/social-facebook.png" alt="">
+                                        Facebook
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <a href="" class="policy-card_info__social">
+                                        <img src="./assets/images/social-youtube.png" alt="">
+                                        Youtube
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <a href="" class="policy-card_info__social">
+                                        <img src="./assets/images/social-tiktok.png" alt="">
+                                        Tiktok
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-6">
+                                    <a href="" class="policy-card_info__social">
+                                        <img src="./assets/images/social-instagram.png" alt="">
+                                        Instagram
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy-card_image">
+                        <img data-src="https://thinkpro.vn/_nuxt/img/thinkpro-footer.d5b4dbc.png"
+                             class="lazy h-100 w-100 mw-100 object-fit-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-gap product-related">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="title">
+                        Sản phẩm liên quan
+                    </div>
+                </div>
+                <div class="pt-0">
+                    <div class="slider-theme_product mx-0 init-single" id="sliderProductRelated">
+                        <div class="swiper px-0">
+                            <div class="swiper-wrapper h-auto">
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-sale">
+                                            <span>
+                                                Giảm 13%
+                                            </span>
+                                        </div>
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_giamgia">
+                                                <img src="./assets/images/icon1-50x50.png" alt="">
+                                                <span>Giảm sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <del>
+                                                    7.990.000₫
+                                                </del>
+                                            </div>
+                                            <div class="card-desc">
+                                                Giảm thêm 200.000₫ và Quà 1.300.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-sale">
+                                            <span>
+                                                Giảm 13%
+                                            </span>
+                                        </div>
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_xakho">
+                                                <img src="./assets/images/icon5-50x50.png" alt="">
+                                                <span>Xả kho giá sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Máy lọc nước R.O Hydrogen Kangaroo VTU KG100HA 9 lõi
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <del>
+                                                    7.990.000₫
+                                                </del>
+                                            </div>
+                                            <div class="card-desc">
+                                                Giảm thêm 200.000₫ và Quà 1.300.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-sale">
+                                            <span>
+                                                Giảm 13%
+                                            </span>
+                                        </div>
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_quatang">
+                                                <img src="./assets/images/icon4-50x50.png" alt="">
+                                                <span>Tặng ngay sản phẩm ABC</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <del>
+                                                    7.990.000₫
+                                                </del>
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-sale">
+                                            <span>
+                                                Giảm 13%
+                                            </span>
+                                        </div>
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_sinhnhat">
+                                                <img src="./assets/images/icon3-50x50.png" alt="">
+                                                <span>Sinh nhật giảm sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <del>
+                                                    7.990.000₫
+                                                </del>
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_giamgia">
+                                                <img src="./assets/images/icon1-50x50.png" alt="">
+                                                <span>Giảm sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <small>-25%</small>
+                                            </div>
+                                            <div class="card-price card-price_small">
+                                                <i class="fal fa-usd-circle"></i>
+                                                Giá rẻ: 3.042.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_xakho">
+                                                <img src="./assets/images/icon5-50x50.png" alt="">
+                                                <span>Xả kho giá sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Máy lọc nước R.O Hydrogen Kangaroo VTU KG100HA 9 lõi
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <small>-25%</small>
+                                            </div>
+                                            <div class="card-desc">
+                                                Giảm thêm 200.000₫ và Quà 1.300.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-label">
+                                                Trả góp 0%
+                                            </div>
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-88-kg-aqw-fr88gtbk-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_quatang">
+                                                <img src="./assets/images/icon4-50x50.png" alt="">
+                                                <span>Tặng ngay sản phẩm ABC</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <small>-25%</small>
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-label card-label_sinhnhat">
+                                                <img src="./assets/images/icon3-50x50.png" alt="">
+                                                <span>Sinh nhật giảm sốc</span>
+                                            </div>
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                                <small>-25%</small>
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide h-auto">
+                                    <div class="product-card card bg-white rounded-3 border-0 h-100">
+                                        <div class="card-header border-0 p-0 bg-white">
+                                            <div class="card-image position-relative overflow-hidden d-flex align-items-center">
+                                                <img data-src="./assets/images/product/aqua-aqd-a800f-w-300x300.jpg"
+                                                     class="swiper-lazy img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 pb-0">
+                                            <div class="card-title">
+                                                Aqua 8.8 Kg AQW-FR88GT.BK
+                                            </div>
+                                            <div class="card-text">
+                                                Online giá rẻ
+                                            </div>
+                                            <div class="card-price">
+                                                5.990.000₫
+                                            </div>
+                                            <div class="card-rate">
+                                                <b>4.4</b>
+                                                <i class="fas fa-star"></i>
+                                                (53)
+                                            </div>
+                                        </div>
+                                        <a href="" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-slider button-prev position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 start-0 z-index-2 transition-default">
+                            <i class="fal fa-angle-left"></i>
+                        </div>
+                        <div class="button-slider button-next position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 end-0 z-index-2 transition-default">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 pb-15px text-center">
+                    <a href="" class="button-orange">
+                        Xem tất cả sản phẩm
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal popup-detail" id="popupDetailProduct" tabindex="-1">
+            <div class="modal-dialog modal-xl my-0">
+                <div class="modal-content border-0 rounded-0">
+                    <div class="modal-close">
+                        <button type="button" data-bs-dismiss="modal">
+                            <i class="fal fa-times"></i>
+                            Đóng
+                        </button>
+                    </div>
+                    <div class="modal-header p-0 rounded-0">
+                        <ul class="nav nav-tabs border-bottom-0 w-100 mw-100 justify-content-center"
+                            id="tabDetailProduct">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="ddnb-tab" data-bs-toggle="tab"
+                                        data-bs-target="#ddnb" type="button" role="tab">
+                                    Đặc điểm nổi bật
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="vsp-tab" data-bs-toggle="tab"
+                                        data-bs-target="#vsp" type="button" role="tab">
+                                    Video sản phẩm
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tskt-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tskt" type="button" role="tab">
+                                    Thông số kỹ thuật
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="ttsp-tab" data-bs-toggle="tab"
+                                        data-bs-target="#ttsp" type="button" role="tab">
+                                    Thông tin sản phẩm
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="ddnb">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-9">
+                                            <div class="product-images">
+                                                <div class="slider-theme" id="sliderPopupImages">
+                                                    <div class="position-relative" id="sliderPopupImagesAvatar">
+                                                        <div class="swiper">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100637733481340257411.jpg"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-120821-0235480.png"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-230521-0112075.jpg"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-230521-0112087.jpg"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0459520.png"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-190821-1126310.png"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/1-1020x571.jpg"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/2-1020x571.jpg"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="javascript:void(0)" class="d-block">
+                                                                        <img data-src="./assets/images/page-product/bg_csmh_dmx-min.png"
+                                                                             class="img-fluid swiper-lazy" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="button-slider button-prev position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 z-index-2 transition-default">
+                                                            <i class="fal fa-angle-left"></i>
+                                                        </div>
+                                                        <div class="button-slider button-next position-absolute d-flex align-items-center justify-content-center translate-middle-y top-50 z-index-2 transition-default">
+                                                            <i class="fal fa-angle-right"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div id="sliderPopupImagesThumb"
+                                                         class="pt-10px pb-0 position-relative">
+                                                        <div class="swiper">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100637733481340257411.jpg"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-120821-0235480.png"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-230521-0112075.jpg"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-230521-0112087.jpg"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0459520.png"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-190821-1126310.png"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/1-1020x571.jpg"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/2-1020x571.jpg"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                                <div class="swiper-slide product-images_thumb">
+                                                                    <img data-src="./assets/images/page-product/bg_csmh_dmx-min.png"
+                                                                         class="img-fluid swiper-lazy" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="vsp">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-9">
+                                            <div class="product-videos ratio ratio-16x9">
+                                                <iframe class="img-fluid"
+                                                        src="https://www.youtube.com/embed/xxHbU6u33kU"
+                                                        title="YouTube video player" frameborder="0"
+                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tskt">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <img src="./assets/images/page-product/banner.jpg" class="img-fluid w-100"
+                                                 alt="">
+                                            <div class="popup-detail_list">
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-detail_list__wrapper">
+                                                    <div class="popup-detail_list__title">
+                                                        Tổng quan sản phẩm
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại Tivi:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">Smart Tivi QLED</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Loại màn hình:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <a href="">LED viền kết hợp Dual LED, VA LCD</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            Tizen OS 6.0
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-detail_list__item">
+                                                        <div class="popup-detail_list__left">
+                                                            Hệ điều hành:
+                                                        </div>
+                                                        <div class="popup-detail_list__right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Super Ultra Wide Game View & Game Bar
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Giảm độ trễ chơi game Auto Low Latency Mode
+                                                                        (ALLM)
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">
+                                                                        Chuyển động mượt Motion Xcelerator Turbo
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.dienmayxanh.com/kinh-nghiem-hay/ambient-mode-tren-tivi-samsung-la-gi-1204652"
+                                                                       target="_blank">Ambient Mode
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="ttsp">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="product-description mt-0">
+                                                <div class="product-description_content h-auto">
+                                                    <p><em><strong>Smart Tivi QLED 4K 50 inch Samsung QA50Q60B sở hữu sở
+                                                        hữu
+                                                        vẻ
+                                                        ngoài cuốn hút với thiết kế AirSlim thanh mảnh. Bên cạnh đó,
+                                                        <a href="https://www.dienmayxanh.com/tivi" target="_blank"
+                                                           title="Mời bạn xem thêm tivi đang kinh doanh tại Điện máy XANH"
+                                                           type="Mời bạn xem thêm tivi đang kinh doanh tại Điện máy XANH">
+                                                            tivi
+                                                        </a>
+                                                        trang bị các công nghệ hình ảnh, âm thanh hiện đại như&nbsp;Quantum
+                                                        Dot, bộ
+                                                        xử lý Quantum 4K Lite,&nbsp;âm thanh chuyển động theo hình ảnh
+                                                        OTS
+                                                        Lite cho
+                                                        trải nghiệm nghe nhìn trên tivi Samsung trở nên hoàn
+                                                        hảo.</strong></em></p>
+                                                    <h3>Thiết kế</h3>
+                                                    <p>-&nbsp;<a
+                                                            href="https://www.dienmayxanh.com/tivi/smart-qled-4k-50-inch-samsung-qa50q60b"
+                                                            target="_blank"
+                                                            title="Mời bạn xem thêm Smart Tivi QLED 4K 50 inch Samsung QA50Q60B đang kinh doanh tại Điện máy XANH"
+                                                            type="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B">Smart
+                                                        Tivi
+                                                        QLED 4K 50
+                                                        inch Samsung QA50Q60B
+                                                    </a>
+                                                        <strong>sở hữu thiết AirSlim thanh mảnh</strong>, cạnh viền bằng
+                                                        nhựa mỏng
+                                                        tạo cảm giác xem mở rộng, tránh sao nhãng khi xem tivi.
+                                                    </p>
+                                                    <p>-
+                                                        <a href="https://www.dienmayxanh.com/tivi-samsung?g=smart-tivi"
+                                                           target="_blank" title="Mời bạn xem thêm Smart tivi Samsung"
+                                                           type="Mời bạn xem thêm Smart tivi Samsung">Smart tivi Samsung
+                                                        </a>&nbsp;có kích thước <strong>màn hình 50 inch</strong> được
+                                                        nâng
+                                                        đỡ vững
+                                                        chắc bởi <strong>chân đế L</strong> ánh đen cuốn hút. Tivi là sự
+                                                        lựa
+                                                        chọn
+                                                        phù hợp với các không gian phòng khách, phòng ngủ, phòng họp,...
+                                                    </p>
+                                                    <p><img
+                                                            alt="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B - Thiết kế"
+                                                            data-src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png"
+                                                            class=" lazyloaded"
+                                                            title="Smart Tivi QLED 4K 50 inch Samsung QA50Q60B - Thiết kế"
+                                                            src="./assets/images/page-product/led-4k-samsung-ua55au8100-280721-0500300.png">
+                                                    </p>
+                                                    <p><em>*Hình ảnh chỉ mang tính minh hoạ sản phẩm</em></p>
+                                                    <h3>Công nghệ hình ảnh</h3>
+                                                    <p><strong>-&nbsp;<a
+                                                            href="https://www.dienmayxanh.com/kinh-nghiem-hay/cac-cong-nghe-noi-bat-cua-tivi-samsung-20-1339340#man-hinh-cham-luong-tu-quantum-dot"
+                                                            target="_blank"
+                                                            title="Mời bạn xem thêm công nghệ Quantum Dot"
+                                                            type="Mời bạn xem thêm công nghệ Quantum Dot">Công nghệ
+                                                        Quantum
+                                                        Dot hiển
+                                                        thị 100% dải màu
+                                                    </a>
+                                                    </strong>, tivi hiển thị hình ảnh với độ nét cao, mang đến thế giới
+                                                        màu
+                                                        sắc chân
+                                                        thực, sống động.
+                                                    </p>
+                                                    <p><strong>- Công nghệ đèn nền Dual LED </strong>tích hợp <strong>công
+                                                        nghệ
+                                                        Quantum HDR </strong>giúp nâng cao độ tương phản, màu sắc chính
+                                                        xác,
+                                                        <a href="https://www.dienmayxanh.com/tivi-samsung"
+                                                           target="_blank"
+                                                           title="Mời bạn xem thêm tivi Samsung"
+                                                           type="Mời bạn xem thêm tivi Samsung">tivi Samsung
+                                                        </a>
+                                                        cho hình ảnh đẹp mắt với độ sáng cao.
+                                                    </p>
+                                                    <p><strong>-&nbsp;<a
+                                                            href="https://www.dienmayxanh.com/kinh-nghiem-hay/cac-cong-nghe-hinh-anh-noi-bat-tren-tivi-samsung-2-1343084#bo-xu-ly-quantum-lite"
+                                                            target="_blank"
+                                                            title="Mời bạn xem thêm Bộ xử lý Quantum 4K Lite"
+                                                            type="Mời bạn xem thêm Bộ xử lý Quantum 4K Lite">Bộ xử lý
+                                                        Quantum 4K
+                                                        Lite
+                                                    </a>
+                                                    </strong>nâng cấp chất lượng hình ảnh đầu vào lên gần chuẩn 4K, các
+                                                        cảnh
+                                                        phim,
+                                                        chương trình thể thao, ca nhạc,... được trình chiếu với chất
+                                                        lượng
+                                                        hoàn hảo.
+                                                    </p>
+                                                    <p><strong>- Chuyển động mượt Motion Xcelerator</strong> giúp giảm
+                                                        độ
+                                                        mờ, độ nét
+                                                        chuyển động được nâng cao, giờ đây bạn có thể bắt trọn từng
+                                                        khoảnh
+                                                        khắc của
+                                                        các nội dung yêu thích.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="zVYmoVG4"></script>
     </div>
 </main>
 
@@ -4297,6 +5614,7 @@
 <script type="text/javascript" src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/js/countdown.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
+
 </body>
 </html>
 
