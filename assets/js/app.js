@@ -598,8 +598,84 @@
         });
     }
 
+    let handleLoadHTML = function () {
+        $('.handleLoadHTML').click(function () {
+            $(this).parents('.section-html').addClass('is-show');
+            $(this).parent().remove();
+        });
+    }
+
+    let handleDropdownItem = function () {
+        $('.handleDropdownItem').click(function (e) {
+            e.stopPropagation();
+            $(this).toggleClass('is-active');
+            if ($('.handleDropdownItem.is-active').length) {
+                // Gỡ bỏ disabled button xem kết quả
+                // Chỗ này nữa em xử lý lại nha
+                $(this).closest('.dropdown-menu_body').next('.dropdown-menu_footer').removeClass('d-none').addClass('d-flex');
+                $(this).closest('.dropdown-menu_body').next('.dropdown-menu_footer').find('.button-result').removeClass('disabled').attr('disabled', false);
+            } else {
+                $(this).closest('.dropdown-menu_body').next('.dropdown-menu_footer').removeClass('d-flex').addClass('d-none');
+                $(this).closest('.dropdown-menu_body').next('.dropdown-menu_footer').find('.button-result').addClass('disabled').attr('disabled', true);
+            }
+        });
+    }
+
+    let formatValue = wNumb({
+        decimals: 0,
+        thousand: '.',
+        suffix: '',
+    });
+
+    let handlePriceFilterSlider = function () {
+        let priceFilterSlider = $('#priceFilterSlider');
+
+        noUiSlider.create(priceFilterSlider[0], {
+            start: [3500, 35000],
+            step: 1,
+            range: {
+                'min': [3500],
+                'max': [35000]
+            },
+            format: formatValue,
+            connect: true
+        });
+
+        priceFilterSlider[0].noUiSlider.on('update', function (values) {
+            $('input[name=priceFilter-input_min]').val(values[0]);
+            $('input[name=priceFilter-input_max]').val(values[1]);
+        });
+    }
+
+    let handlePriceSlider = function () {
+        let priceSlider = $('#priceSlider');
+        noUiSlider.create(priceSlider[0], {
+            start: [3500, 35000],
+            step: 1,
+            range: {
+                'min': [3500],
+                'max': [35000]
+            },
+            format: formatValue,
+            connect: true
+        });
+
+        priceSlider[0].noUiSlider.on('update', function (values) {
+            $('input[name=price-input_min]').val(values[0]);
+            $('input[name=price-input_max]').val(values[1]);
+        });
+    }
+
+    let preventDefault = function () {
+        $('.preventDefault').click(function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+        })
+    }
+
     $(document).ready(function () {
         configLazyLoad();
+        preventDefault();
         handleHeaderMobile();
 
         initSliderHeader();
@@ -624,6 +700,12 @@
 
         initSliderPopupImages();
         handlePopupDetail();
+
+        //  Danh mục sản phẩm
+        handleLoadHTML();
+        handleDropdownItem();
+        handlePriceFilterSlider();
+        handlePriceSlider();
     });
 
 })(jQuery);
