@@ -619,28 +619,6 @@
 				$(this).closest('.dropdown-menu_body').next('.dropdown-menu_footer').find('.button-result').addClass('disabled').attr('disabled', true);
 			}
 		});
-
-		$('.filter-list_item .dropdown').on('show.bs.dropdown', function () {
-			$(this).parent().css({
-				width: $(this).width(),
-				marginLeft: '.375rem',
-				marginRight: '.375rem',
-			});
-			$('body').append($(this).css({
-				position: 'absolute',
-				left: $(this).offset().left,
-				top: $(this).offset().top,
-			}).detach());
-		});
-
-		$('.filter-list_item .dropdown').on('hidden.bs.dropdown', function () {
-			let index = parseInt($(this).attr('data-index')) + 1;
-			$('.filter-list_item:nth-child(' + index + ')').append($(this).css({
-				position: false,
-				left: false,
-				top: false,
-			}).detach());
-		});
 	}
 
 	let formatValue = wNumb({
