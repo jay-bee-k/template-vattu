@@ -456,6 +456,42 @@
 		});
 	}
 
+
+	let [imagesThumbMB, imagesAvatarMB] = [];
+	let initSliderImagesMB = function () {
+		imagesThumbMB = new Swiper('#sliderImagesThumbMB .swiper', {
+			spaceBetween: 10,
+			slidesPerView: 6,
+			lazy: {
+				loadOnTransitionStart: true
+			},
+			preloadImages: true,
+			breakpoints: {
+				320: {
+					slidesPerView: 3.25,
+				},
+				1199: {
+					slidesPerView: 6,
+				},
+			},
+		});
+
+		imagesAvatarMB = new Swiper('#sliderImagesAvatarMB .swiper', {
+			thumbs: {
+				swiper: imagesThumbMB,
+			},
+			slidesPerView: 1,
+			lazy: {
+				loadOnTransitionStart: true
+			},
+			preloadImages: true,
+			navigation: {
+				nextEl: '#sliderImagesAvatarMB .button-next',
+				prevEl: '#sliderImagesAvatarMB .button-prev',
+			},
+		});
+	}
+
 	let handlePaymentRadio = function () {
 		$('.payment-ratio').click(function () {
 			if ($(this).hasClass('is-checked')) {
@@ -466,9 +502,18 @@
 			}
 		})
 	}
+	let configTooltip = function () {
+
+	}
 
 	let handlePaymentTooltip = function () {
-		$('.payment-tooltip').mouseover(function (e) {
+		let eventTooltip = 'click';
+		if (windowWidth >= 992) {
+			eventTooltip = 'mouseover';
+		}
+		$(document).on(eventTooltip, '.payment-tooltip', function (e) {
+			console.log(1);
+			e.preventDefault();
 			let renderHTML = `<div style="color: #000000">
                                 <span>
                                     <strong>- Thanh toán qua 3 kỳ</strong>
@@ -505,7 +550,7 @@
 			let tooltip = new bootstrap.Tooltip(tooltipElement, {
 				html: true,
 				placement: 'bottom',
-				container: '.product-payments',
+				container: $(this).closest('.product-payments')[0],
 				sanitize: false,
 			});
 
@@ -542,6 +587,15 @@
 					prevEl: `#sliderProductRelated .button-prev`,
 				},
 				breakpoints: {
+					320: {
+						slidesPerView: 1.5,
+					},
+					375: {
+						slidesPerView: 2.25,
+					},
+					991: {
+						slidesPerView: 3.25,
+					},
 					1199: {
 						slidesPerView: 5,
 					}
@@ -629,41 +683,44 @@
 
 	let handlePriceFilterSlider = function () {
 		let priceFilterSlider = $('#priceFilterSlider');
+		if (priceFilterSlider.length) {
+			noUiSlider.create(priceFilterSlider[0], {
+				start: [3500, 35000],
+				step: 1,
+				range: {
+					'min': [3500],
+					'max': [35000]
+				},
+				format: formatValue,
+				connect: true
+			});
 
-		noUiSlider.create(priceFilterSlider[0], {
-			start: [3500, 35000],
-			step: 1,
-			range: {
-				'min': [3500],
-				'max': [35000]
-			},
-			format: formatValue,
-			connect: true
-		});
-
-		priceFilterSlider[0].noUiSlider.on('update', function (values) {
-			$('input[name=priceFilter-input_min]').val(values[0]);
-			$('input[name=priceFilter-input_max]').val(values[1]);
-		});
+			priceFilterSlider[0].noUiSlider.on('update', function (values) {
+				$('input[name=priceFilter-input_min]').val(values[0]);
+				$('input[name=priceFilter-input_max]').val(values[1]);
+			});
+		}
 	}
 
 	let handlePriceSlider = function () {
 		let priceSlider = $('#priceSlider');
-		noUiSlider.create(priceSlider[0], {
-			start: [3500, 35000],
-			step: 1,
-			range: {
-				'min': [3500],
-				'max': [35000]
-			},
-			format: formatValue,
-			connect: true
-		});
+		if (priceSlider.length) {
+			noUiSlider.create(priceSlider[0], {
+				start: [3500, 35000],
+				step: 1,
+				range: {
+					'min': [3500],
+					'max': [35000]
+				},
+				format: formatValue,
+				connect: true
+			});
 
-		priceSlider[0].noUiSlider.on('update', function (values) {
-			$('input[name=price-input_min]').val(values[0]);
-			$('input[name=price-input_max]').val(values[1]);
-		});
+			priceSlider[0].noUiSlider.on('update', function (values) {
+				$('input[name=price-input_min]').val(values[0]);
+				$('input[name=price-input_max]').val(values[1]);
+			});
+		}
 	}
 
 	let preventDefault = function () {
@@ -693,6 +750,7 @@
 
 		// chi tiết sản phẩm
 		initSliderImages();
+		initSliderImagesMB();
 		initSliderRelated();
 		handlePaymentRadio();
 		handlePaymentTooltip();
