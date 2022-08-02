@@ -731,18 +731,54 @@
     }
 
     let handleCollapsePromoCart = function () {
-        $('#cart-list [data-bs-toggle=collapse]').on('shown.bs.collapse', function (e) {
-            $(this).attr('data-text', $(this).html());
-            $(this).html('Thu gọn <i class="fas fa-caret-up"></i>');
+        $('#cart-list .collapse').on('show.bs.collapse', function (e) {
+            let collapseID = $(this).attr('id'),
+                collapseButton = $('button[data-bs-target="#' + collapseID + '"]');
+            collapseButton.attr('data-text', collapseButton.html());
+            collapseButton.html('Thu gọn <i class="fas fa-caret-up"></i>');
         }).on('hide.bs.collapse', function (e) {
-            $(this).html($(this).attr('data-text'));
+            let collapseID = $(this).attr('id'),
+                collapseButton = $('button[data-bs-target="#' + collapseID + '"]');
+            collapseButton.html(collapseButton.attr('data-text'));
         })
     }
+
+    let handleViewPass = function () {
+        $(document).on('click', '.view-pass', function () {
+            let elm = $(this),
+                elm_id = elm.attr('data-id');
+            if (elm.hasClass('is-show')) {
+                elm.html('<i class="fas fa-eye">');
+                elm.removeClass('is-show');
+                $('#' + elm_id).attr('type', 'password');
+            } else {
+                elm.html('<i class="fas fa-eye-slash">');
+                elm.addClass('is-show');
+                $('#' + elm_id).attr('type', 'text');
+            }
+        });
+    }
+
+    let validateForm = function () {
+        $('#frmValidate').submit(function (event) {
+            let form = $(this);
+            if (!form[0].checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+                form.addClass('was-validated');
+            } else {
+                return false;
+            }
+        });
+    }
+
 
     $(document).ready(function () {
         configLazyLoad();
         preventDefault();
         handleHeaderMobile();
+        handleViewPass();
+        validateForm();
 
         initSliderHeader();
         initSliderHero();
