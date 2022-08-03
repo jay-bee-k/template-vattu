@@ -1787,12 +1787,29 @@
     transition: var(--transition);
 }
 
+.articles-column .articles-desc {
+    font-size: var(--size-md);
+    color: var(--gray-500);
+    margin-top: .75rem;
+}
+
 .articles-column:hover .articles-thumb {
     opacity: .9;
 }
 
 .articles-column:hover .articles-title {
     color: var(--primary-color);
+}
+
+.articles-column_card {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--bs-white-rgb);
+    box-shadow: var(--shadow-primary);
+}
+
+.articles-column_card:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 .articles-list {
@@ -2022,6 +2039,60 @@
     .section-breadcrumb .breadcrumb .breadcrumb-item:last-child {
         display: block;
     }
+}
+
+.section-pagination .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.section-pagination .pagination > li {
+    margin: 0 7.5px;
+}
+
+.section-pagination .pagination > li > a {
+    min-width: 34px;
+    height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 30px;
+    border-radius: 50% !important;
+    border: 0;
+    color: var(--gray-900);
+    font-size: var(--size-xxl);
+}
+
+.section-pagination .pagination > li.page-item > a {
+    background: #D4D4D8;
+    color: var(--bs-white);
+    font-size: var(--size-md);
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.section-pagination .pagination > li > a:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.section-pagination .pagination > li.pageactive > a, .section-pagination .pagination > li.page-item > a:hover {
+    background-color: var(--primary-color);
+    color: var(--bs-white);
 }
 
 .page-product .product-header {
@@ -4327,4 +4398,9 @@
 
 .frm-validation .frm-validation_desc a:hover {
     color: var(--primary-color);
+}
+
+.page-articles {
+    padding: 2rem 0;
+    background-color: #f6f6f6;
 }
