@@ -210,6 +210,36 @@
     padding-right: 100px;
 }
 
+.button-light {
+    border-radius: 20px;
+    padding: 8px 20px 7px;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    font-size: var(--size-md);
+    white-space: nowrap;
+    background-color: var(--bs-white);
+    border: 1px solid #e5e7eb;
+    color: var(--gray-700);
+}
+
+.button-light:hover {
+    background-color: var(--primary-color);
+    color: var(--bs-white);
+    border-color: var(--primary-color);
+}
 
 @media screen and (max-width: 991px) {
     .button-white,
@@ -4408,6 +4438,11 @@
     color: var(--bs-white);
 }
 
+.cart-inner .cart-home .button-orange {
+    width: 100%;
+    padding: 12px 15px;
+}
+
 .page-form {
     padding: 3rem 0;
     background-color: #f6f6f6;
@@ -4430,6 +4465,26 @@
     position: relative;
 }
 
+.frm-validation_item .form-check {
+    margin-right: 1.5rem;
+}
+
+.frm-validation_item .form-check .form-check-input {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: .15rem;
+    cursor: pointer
+}
+
+.frm-validation_item .form-check .form-check-label {
+    cursor: pointer;
+}
+
+.frm-validation_item .form-check .form-check-input:active,
+.frm-validation_item .form-check .form-check-input:checked {
+    border-color: transparent !important
+}
+
 .frm-validation .frm-validation_item .frm-validation_label {
     font-weight: 500;
     color: var(--gray-800);
@@ -4447,6 +4502,7 @@
 .frm-validation .frm-validation_item .form-control.disabled,
 .frm-validation .frm-validation_item .form-control:disabled {
     cursor: not-allowed;
+    background-color: #f6f6f6;
 }
 
 .frm-validation .frm-validation_item .btn-pass {
@@ -4520,7 +4576,12 @@
 }
 
 .frm-validation .frm-validation_item.frm-validation_button {
-    margin-top: 35px !important;
+    margin-top: 25px !important;
+}
+
+.frm-validation .frm-validation_item.frm-validation_button .button-primary {
+    font-size: var(--size-md);
+    font-weight: 700;
 }
 
 .frm-validation .frm-validation_item + .frm-validation_item {
@@ -4594,4 +4655,58 @@
     background: var(--primary-color);
     color: var(--bs-white);
     box-shadow: var(--shadow-primary);
+}
+
+.account-card {
+    box-shadow: var(--shadow-primary);
+    border-radius: 0.3rem;
+    border: 0;
+    background: var(--bs-white);
+}
+
+.account-card .card-title {
+    text-transform: uppercase;
+    font-size: var(--size-xl);
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+.section-table {
+    box-shadow: var(--shadow-primary);
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.section-table th,
+.section-table td {
+    padding: .75rem;
+    vertical-align: middle;
+}
+
+.section-table > :not(:first-child) {
+    border-top: 0;
+}
+
+.section-table .table-image {
+    width: 70px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.section-table .table-image img {
+    max-width: 100%;
+}
+
+.section-table .table-content {
+    width: 100%;
+}
+
+.section-table .table-content .table-title > a {
+    color: var(--gray-900);
+    font-weight: 500;
+}
+
+.section-table .table-content .table-title > a:hover {
+    color: var(--primary-color);
 }
