@@ -49,6 +49,18 @@
 		}
 	}
 
+	let handleScrollBanner = function () {
+		if ($('#section-banner_sticky').length) {
+			$(window).scroll(function (e) {
+				if ($(document).scrollTop() > $('#section-hero').innerHeight()) {
+					$('#section-banner_sticky').addClass('is-show');
+				} else {
+					$('#section-banner_sticky').removeClass('is-show');
+				}
+			});
+		}
+	}
+
 	let configLazyLoad = function () {
 		$('.lazy').Lazy({
 			effect: 'fadeIn',
@@ -825,6 +837,7 @@
 	}
 
 	$(document).ready(function () {
+		handleScrollBanner();
 		configLazyLoad();
 		preventDefault();
 		handleHeaderMobile();
