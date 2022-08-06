@@ -836,6 +836,35 @@
 		});
 	}
 
+	let handleSizeToc = function () {
+		let flag = false;
+
+		$('#toc').attr({
+			'data-minheight': $('#toc .toc-heading').outerHeight(),
+			'data-height': $('#toc').outerHeight(),
+			'data-width': $('#toc').outerWidth()
+		});
+
+		$('#toc').on('click', '.collapse-toc', function () {
+			let elm = $('#toc');
+			if (!flag) {
+				$('#toc').animate({
+					height: elm.attr('data-minheight'),
+					width: 200,
+				});
+				$(this).text('[Mở rộng]');
+				flag = true;
+			} else {
+				$('#toc').animate({
+					height: elm.attr('data-height'),
+					width: elm.attr('data-width'),
+				});
+				$(this).text('[Thu gọn]');
+				flag = false;
+			}
+		});
+	}
+
 	$(document).ready(function () {
 		handleScrollBanner();
 		configLazyLoad();
@@ -879,6 +908,8 @@
 		handleCollapseGiaoHang();
 		handleDropdownPromo();
 		handleInitSelect();
+
+		handleSizeToc();
 	});
 
 })
